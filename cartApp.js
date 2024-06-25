@@ -51,3 +51,6 @@ function initializeCart() {
     // Add the item to the cart
     addItem(item);
   });
+
+  // Add an event listener to the display cart button
+  document.getElementById('displayCartButton').addEventListener('click', displayCart);
