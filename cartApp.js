@@ -34,3 +34,20 @@ function initializeCart() {
     // Log the cart contents to the console
     console.log(cart);
   }
+
+  // Event listeners
+  document.getElementById('addItemForm').addEventListener('submit', function(event) {
+    // Prevent the form from submitting normally
+    event.preventDefault();
+    // Get the values from the input fields
+    let itemName = document.getElementById('itemName').value;
+    let itemPrice = document.getElementById('itemPrice').value;
+    // Create an item object
+    let item = {
+      id: Date.now(), // Use the current timestamp as a unique id
+      name: itemName,
+      price: itemPrice
+    };
+    // Add the item to the cart
+    addItem(item);
+  });
