@@ -26,3 +26,11 @@ function initializeCart() {
     // Store the updated cart back into localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
   }
+
+  // Function to display the cart
+  function displayCart() {
+    // Retrieve the cart from localStorage
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    // Log the cart contents to the console
+    console.log(cart);
+  }
