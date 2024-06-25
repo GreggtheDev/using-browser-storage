@@ -16,3 +16,13 @@ function initializeCart() {
     // Store the updated cart back into localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
   }
+
+  // Function to remove an item from the cart
+  function removeItem(itemId) {
+    // Retrieve the cart from localStorage
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    // Remove the item with the given id from the cart
+    cart = cart.filter(item => item.id !== itemId);
+    // Store the updated cart back into localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
