@@ -54,3 +54,6 @@ function initializeCart() {
 
   // Add an event listener to the display cart button
   document.getElementById('displayCartButton').addEventListener('click', displayCart);
+
+  // Initialize the cart when the script loads
+initializeCart();
