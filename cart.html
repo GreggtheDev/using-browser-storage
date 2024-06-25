@@ -1,23 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopping Cart</title>
-</head>
-<body>
-  <h1>Shopping Cart</h1>
+<!DOCTYPE html> <!-- This line is a document type declaration that helps web browsers to display web pages correctly. -->
+<html lang="en"> <!-- This line defines the language of the document. -->
 
-  <form id="addItemForm">
-    <label for="itemName">Item Name:</label>
-    <input type="text" id="itemName" name="itemName" required>
-    <label for="itemPrice">Item Price:</label>
-    <input type="number" step="0.01" id="itemPrice" name="itemPrice" required>
-    <button type="submit">Add Item</button>
+<head> <!-- This line defines the head section of the HTML document. -->
+  <meta charset="UTF-8"> <!-- This line defines the character encoding for the HTML document. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This line makes your web page look good on all devices. -->
+  <title>Shopping Cart</title> <!-- This line defines the title of the HTML document. -->
+</head>
+
+<body> <!-- This line defines the body section of the HTML document. -->
+  <h1>Shopping Cart</h1> <!-- This line defines a top-level heading. -->
+
+  <form id="addItemForm"> <!-- This line defines a form with an id of "addItemForm". -->
+    <label for="itemName">Item Name:</label> <!-- This line defines a label for an input element. -->
+    <input type="text" id="itemName" name="itemName" required> <!-- This line defines an input field where the user can enter text. -->
+    <label for="itemPrice">Item Price:</label> <!-- This line defines a label for another input element. -->
+    <input type="number" step="0.01" id="itemPrice" name="itemPrice" required> <!-- This line defines an input field where the user can enter numbers. -->
+    <button type="submit">Add Item</button> <!-- This line defines a button for submitting the form. -->
   </form>
 
-  <button id="displayCartButton">Display Cart</button>
+  <button id="displayCartButton">Display Cart</button> <!-- This line defines a button with an id of "displayCartButton". -->
 
-  <script src="cartApp.js"></script>
+  <script src="cartApp.js"></script> <!-- This line includes the JavaScript file "cartApp.js". -->
 </body>
-</html>
+
+</html> <!-- This line defines the end of the HTML document. -->
